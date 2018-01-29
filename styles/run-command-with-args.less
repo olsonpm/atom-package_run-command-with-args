@@ -1,0 +1,44 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/styles/ui-variables.less
+// for a full listing of what's available.
+@import 'ui-variables';
+
+.cf:before,
+.cf:after {
+  content: ' ';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.run-command-with-args {
+  padding: 12px;
+
+  h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .args {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 15px;
+  }
+
+  label + input {
+    margin-left: 8px;
+  }
+
+  .actions {
+    margin-top: 20px;
+
+    > button + button {
+      margin-left: 15px;
+    }
+  }
+}

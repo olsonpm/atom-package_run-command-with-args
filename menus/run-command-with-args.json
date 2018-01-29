@@ -1,0 +1,13 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Run Command With Args",
+          "command": "run-command-with-args:search"
+        }
+      ]
+    }
+  ]
+}

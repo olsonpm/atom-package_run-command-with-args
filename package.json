@@ -1,0 +1,53 @@
+{
+  "name": "run-command-with-args",
+  "main": "./lib/run-command-with-args",
+  "version": "0.1.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "repository": "https://github.com/atom/run-command-with-args",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-select-list": "^0.7.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "env": {
+      "atomtest": true,
+      "es6": true,
+      "node": true,
+      "browser": true,
+      "mocha": true
+    },
+    "globals": {
+      "atom": true
+    },
+    "extends": ["eslint:recommended"],
+    "parserOptions": {
+      "ecmaVersion": 8,
+      "sourceType": "module"
+    },
+    "rules": {
+      "linebreak-style": [2, "unix"],
+      "semi": [2, "always"],
+      "no-console": 0,
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "all",
+          "ignoreRestSiblings": false,
+          "argsIgnorePattern": "^_"
+        }
+      ]
+    }
+  }
+}
